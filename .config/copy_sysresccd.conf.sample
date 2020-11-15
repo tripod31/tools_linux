@@ -1,0 +1,13 @@
+"DIR_MOUNT":    "/mnt"
+"DIR_ISO":      "/media/yoshi/MXLIVE"
+#TYPE:DIR
+#mount iso image,copy sysresccd dir to DIR_TO
+#TYPE:ISO
+#copy iso image to DIR_TO
+"settings":
+    "setting1":
+        "TYPE":        "DIR"
+        "DIR_TO":       "/home/yoshi/pxeboot"
+    "setting2":
+        "TYPE":        "ISO"
+        "DIR_TO":       "/home/yoshi"

@@ -1,0 +1,4 @@
+#/bin/sh
+apt-get purge \
+{% for pkg in pkgs %}    {{ pkg }}{% if not loop.last %} \{% endif %}
+{% endfor %}

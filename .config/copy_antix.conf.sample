@@ -1,0 +1,15 @@
+"setting1":
+    "DESC":     "HDD->USB,add *.new"
+    "SRC_DIR":  "/live/boot-dev/antix"
+    "DST_DIR":  "/media/demo/USBHDD/antix"
+    "ADD_NEW":  "y"
+"setting2":
+    "DESC":     "USB->HDD,copy .new"
+    "SRC_DIR":  "/media/demo/USBHDD/antix"
+    "DST_DIR":  "/live/boot-dev/antix"
+    "ADD_NEW":  "n"
+"setting3":
+    "DESC":     "USB->HDD,*add .new"
+    "SRC_DIR":  "/media/demo/USBHDD/antix"
+    "DST_DIR":  "/live/boot-dev/antix"
+    "ADD_NEW":  "y"

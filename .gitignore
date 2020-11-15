@@ -1,0 +1,6 @@
+*.pyc
+*.yaml
+.vscode
+.config/*.conf
+log/*
+test/*

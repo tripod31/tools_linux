@@ -1,0 +1,3 @@
+[settings]
+TEMP_FILE=/sys/class/thermal/thermal_zone3/temp
+INTERVAL_MIN=5
