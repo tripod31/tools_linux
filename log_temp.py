@@ -42,7 +42,7 @@ class Process:
         p2.stdout.close()
         p3.stdout.close()
         output = p4.communicate()[0].decode("utf8").replace('\n','')
-        return True if int(output != 1) else False
+        return True if int(output) != 1 else False
 
     def main(self):
         if self.check_already_running():
