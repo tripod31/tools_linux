@@ -17,7 +17,7 @@ def get_pkg_list():
         raise Exception("exec dpkg failed.")
 
     lines = out.split('\n')
-    re1 = re.compile(r'linux-(image|headers)-([^ ]+)')
+    re1 = re.compile(r'linux-(image|headers|modules)-([^ ]+)')
     pkgs =[]
     for line in lines:
         cols = re.split(' +',line)
@@ -59,7 +59,7 @@ def write_script(pkgs):
     with open(SH_FILE,mode='w') as f:
         f.write(str(script))
     os.chmod(SH_FILE,0o755)
-    
+
 if __name__ == '__main__':
     cur_ver=get_cur_ver()
     if cur_ver is None:
