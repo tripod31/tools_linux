@@ -30,7 +30,7 @@ class Process:
             raise Exception("rfkill parse err:key('')not exists")
         for dev in info['']:
             if not 'type' in dev:
-                raise Exception("rfkill parse err:key(type) not exists")
+                raise Exception("rfkill parse err:key('type') not exists")
             for type in DEV_TYPES:
                 if dev['type'] == type:
                     ret[type] = dev['soft']
@@ -46,9 +46,9 @@ class Process:
         syslog.openlog(MSG_TITLE)   
         states = self.get_states()
         for type in DEV_TYPES:
-            if type in states and states[type] == 'block':
+            if type in states and states[type] == 'blocked':
                 self.unblock(type)     
-                syslog.syslog("rfkill unblock {}".format(type))
+                syslog.syslog("unblock {}".format(type))
 
 if __name__ == '__main__':
     obj = Process()
