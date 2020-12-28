@@ -6,7 +6,7 @@ import re
 from jinja2 import Environment, FileSystemLoader
 from yoshi.util import exec_command
 
-SH_FILE="./test/remove_old_kernel.sh"
+SH_FILE="./out/remove_old_kernel.sh"
 
 def get_pkg_list():
     '''

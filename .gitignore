@@ -3,4 +3,6 @@
 .vscode
 .config/*.conf
 log/*
-test/*
+!log/.gitkeep
+out/*
+!out/.gitkeep
