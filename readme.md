@@ -1,3 +1,3 @@
 tools_linux
 =====
-Tools for linux that I use for private purpose.
+linuxで使う自分用のツール  
